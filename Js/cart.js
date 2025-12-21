@@ -20,7 +20,7 @@ function renderCart() {
             <th>Product</th>
             <th>Img</th>
             <th>Price</th>
-            <th>Qnt</th>
+            <th>Quntiety</th>
             <th>Total</th>
             <th>Remove</th>
           </tr>
