@@ -41,4 +41,15 @@
     gap: 20px;
 }
 
+@media (max-width: 576px) {
+    .all-content h3{
+        font-size: 17px;
+        height: 5px;
+        align-items: center;
+    }
+    .all-content{
+        height: 300px;
+    }
+}
+
 /* End profile section  */

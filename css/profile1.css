@@ -24,4 +24,10 @@
     margin-bottom: 150px;
 }
 
+@media (max-width: 576px){
+    .profile-section p{
+        font-size: 11px;
+    }
+}
+
 /* End profile section  */
