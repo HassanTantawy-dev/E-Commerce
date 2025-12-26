@@ -30,7 +30,10 @@
     background-color: #91B8B329;
 }
 
-@media (max-width:768px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .card{
+        margin-top: 131px;
+    }
     .card h3{
         font-size: 23px;
     }
