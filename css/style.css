@@ -23,6 +23,12 @@
     }
 }
 @media (max-width: 576px) {
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: aliceblue;
+    }
 
     .footer-section{
         text-align: center;
