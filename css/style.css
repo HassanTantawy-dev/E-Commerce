@@ -36,6 +36,9 @@
 @media (max-width: 576px) {
     .navbar{
         position: fixed;
+        z-index: 1000;
+        width: 100%;
+        background-color: rgb(240, 230, 217);
 
     .footer-section{
         text-align: center;
@@ -44,5 +47,6 @@
     .footer-section img{
         width: 55%;
     }
+}
 }
 /* End footer section   */
