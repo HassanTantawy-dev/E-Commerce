@@ -24,10 +24,10 @@
 }
 @media (max-width: 576px) {
     .navbar{
-        position: fixed;
-        width: 100%;
+        position: sticky;
         z-index: 1000;
-        background-color: aliceblue;
+        top: 0;
+        
     }
 
     .footer-section{
