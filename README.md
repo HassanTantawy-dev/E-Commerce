@@ -1,66 +1,59 @@
-# E-COMMERCE
+# Luli Kids — E-Commerce Front-End
 
-Transforming Shopping into Seamless Experiences.
+A multi-page storefront for kids' clothing, built with plain **HTML, CSS and JavaScript** on top of **Bootstrap 5**. No framework and no backend — this is the complete front-end, with each screen as its own page.
 
-[![Generic badge](https://img.shields.io/badge/Technologies-HTML-yellow.svg)]()
-[![Generic badge](https://img.shields.io/badge/Technologies-CSS-yellow.svg)]()
-[![Generic badge](https://img.shields.io/badge/Technologies-Javascript-Green.svg)]()
-[![Generic badge](https://img.shields.io/badge/Technologies-Wow.js-purple.svg)]()
-[![Generic badge](https://img.shields.io/badge/Technologies-Bootstrap-blue.svg)]()
-[![Generic badge](https://img.shields.io/badge/Documentation-README-blue.svg)]()
+## Pages
 
-Built with the best tools and technologies.
+| Page | What it does |
+| :--- | :--- |
+| `Home-Page.html` | Landing page: hero, categories, and featured products |
+| `girl clothes.html` | Product listing |
+| `cart.html` | Shopping cart with items, quantities and totals |
+| `Empty-card.html` | Empty-cart state |
+| `fav.html` | Wishlist / favourites |
+| `check out.html` | Checkout form |
+| `signup.html` | Registration |
+| `profile1.html`, `profile2.html` | User profile screens |
+| `account details.html` | Account settings |
+| `Address.html`, `location.html` | Saved addresses and delivery location |
 
----
+## Features
 
-## Table of Contents
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
----
+- Responsive layout across all pages (Bootstrap grid + custom CSS)
+- Cart and wishlist screens with quantity and total handling
+- Full user flow: register → browse → add to cart → checkout
+- Scroll animations with **Animate.css**
+- Icons via **Font Awesome**
+- Reusable stylesheets: `style.css` for shared rules, one CSS file per page for its own layout
 
-## Overview
+## Stack
 
-E-Commerce is a comprehensive platform designed to deliver a seamless online shopping experience with modular, developer-friendly architecture.  
-It supports core functionalities such as product management, user profiles, shopping cart, and checkout processes, all integrated into a cohesive system.
+`HTML5` · `CSS3` · `JavaScript (ES6)` · `Bootstrap 5` · `Animate.css` · `Font Awesome`
 
-### Why E-Commerce?
+## Run it
 
-This project empowers developers to build scalable, maintainable e-commerce websites with ease.  
-Here are the features it offers:
+No build step. Clone the repo and open the pages:
 
-- **Component-based Architecture:** Modular HTML and lightweight components facilitate easy customization and reuse.  
-- **Responsive UI:** Utilizes Bootstrap, jQuery, and Popper.js to ensure a fluid, accessible interface across devices.  
-- **Secure User Onboarding:** Client-side validation enhances registration and profile security.  
-- **Efficient Cart Management:** Dynamic add-to-cart and wishlist features improve user engagement and usability.  
-- **Clear Separation of Concerns:** Organized code structure simplifies onboarding, development, and maintenance.
+```bash
+git clone https://github.com/HassanTantawy-dev/E-Commerce.git
+cd E-Commerce
+# open Html/Home-Page.html in your browser, or serve the folder:
+python -m http.server 8000
+```
 
----
+Then go to `http://localhost:8000/Html/Home-Page.html`.
 
-## Getting Started
+> Pages reference the stylesheets with `../css/...`, so opening the HTML files directly from disk works, but serving the folder is cleaner.
 
-### Prerequisites
-This project requires the following dependencies:
+## Structure
 
- **Programming Language:** HTML  
-- **Frameworks & Libraries Used:**
-  - **Bootstrap** — for responsive layout and components  
-  - **Bootstrap JS** — to enable interactive UI behavior  
-  - **WOW.js** — for scroll-based animations  
-  - **Font Awesome** — for icons and visual enhancements
----
+```
+Html/     one file per screen
+css/      bootstrap, font awesome, shared and per-page styles
+js/       page behaviour
+Img/      product and UI images
+```
 
-## Installation
+## What this project is not
 
-Build E-Commerce from the source and install dependencies:
-
-1. **Clone the repository:**
-   ```bash
-   https://github.com/hassan4366/E-Commerce.git
-   
-3.**live demo:**
-  <a href = "https://e-commerce-silk-two-64.vercel.app/">Click Here</a>
-  <h1>Created By </h1>
-  Hassan Hammam <a href="https://github.com/hassan4366">GIt-Hub</a> <br/>
-  Hassan Tantawy <a href="https://github.com/HassanTantawy-dev">GIt-Hub</a>
+There is no server, database or payment integration — the cart and account screens are front-end only. Adding a real backend (Laravel or Node with a MySQL schema) is the natural next step.
